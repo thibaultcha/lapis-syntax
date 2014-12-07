@@ -1,12 +1,12 @@
 @import "syntax-variables";
 
 .editor-colors {
-  background-color: @syntax-background-color;
+  background-color: @lap-gray-background;
   color: @syntax-text-color;
 }
 
 .editor {
-  background-color: @syntax-background-color;
+  background-color: @lap-gray-background;
   color: @syntax-text-color;
 
   .wrap-guide {
@@ -66,7 +66,7 @@
 }
 
 .comment {
-  color: @light-gray;
+  color: @lap-gray;
 }
 
 .entity {
@@ -81,18 +81,18 @@
 }
 
 .keyword {
-  color: @purple;
+  color: @lap-purple;
 
   &.control {
-    color: @purple;
+    color: @lap-purple;
   }
 
   &.operator {
-    color: @syntax-text-color;
+    color: @lap-dark-blue;
   }
 
   &.other.special-method {
-    color: @blue;
+    color: @lap-purple;
   }
 
   &.other.unit {
@@ -101,18 +101,22 @@
 }
 
 .storage {
-  color: @purple;
+  color: @lap-purple;
 }
 
 .constant {
-  color: @orange;
+  color: @syntax-text-color;
+
+  &.boolean {
+    color: @lap-light-blue;
+  }
 
   &.character.escape {
     color: @cyan;
   }
 
   &.numeric {
-    color: @orange;
+    color: @lap-dark-blue;
   }
 
   &.other.color {
@@ -125,7 +129,7 @@
 }
 
 .variable {
-  color: @red;
+  color: @lap-dark-blue;
 
   &.interpolation {
     color: darken(@red, 10%);
@@ -142,8 +146,7 @@
 }
 
 .string {
-  color: @green;
-
+  color: @lap-yellow;
 
   &.regexp {
     color: @cyan;
@@ -199,7 +202,7 @@
   }
 
   &.function  {
-    color: @cyan;
+    color: @lap-orange;
 
     &.any-method {
       color: @blue;
@@ -209,7 +212,7 @@
 
 .entity {
   &.name.function {
-    color: @blue;
+    color: @syntax-text-color;
   }
 
   &.name.class, &.name.type.class {
@@ -226,7 +229,7 @@
   }
 
   &.other.attribute-name {
-    color: @orange;
+    color: @lap-purple;
 
     &.id {
       color: @blue;
