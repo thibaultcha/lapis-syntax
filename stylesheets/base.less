@@ -34,6 +34,18 @@
       &.cursor-line-no-selection {
         color: @syntax-gutter-text-color-selected;
       }
+
+      &.git-line-added:before {
+        color: @lap-green !important;
+      }
+
+      &.git-line-removed:before {
+        color: @lap-red !important;
+      }
+
+      &.git-line-modified:before {
+        color: @lap-yellow !important;
+      }
     }
   }
 
@@ -42,7 +54,6 @@
   .fold-marker:after {
     color: @light-gray;
   }
-
   .invisible {
     color: @syntax-text-color;
   }
@@ -71,7 +82,7 @@
 
 .entity {
   &.name.type {
-    color: @lap-dark-blue;
+    color: @syntax-text-color;
   }
 
   &.other.inherited-class {
@@ -81,6 +92,7 @@
 
 .keyword {
   color: @lap-purple;
+  font-weight: bold;
 
   &.control {
     color: @lap-purple;
@@ -95,12 +107,13 @@
   }
 
   &.other.unit {
-    color: @lap-yellow;
+    color: @syntax-text-color;
   }
 }
 
 .storage {
   color: @lap-purple;
+  font-weight: bold;
 }
 
 .constant {
@@ -108,13 +121,14 @@
 
   &.boolean {
     color: @lap-light-blue;
+    font-weight: bold;
   }
 
   &.character.escape {
     color: @lap-orange;
   }
 
-  &.numeric {
+  &.numeric:not(.css) {
     color: @lap-dark-blue;
   }
 
@@ -184,7 +198,7 @@
     }
 
     &.italic {
-      color: @purple;
+      color: @syntax-text-color;
       font-style: italic;
     }
   }
@@ -200,7 +214,7 @@
     color: @lap-dark-blue;
   }
 
-  &.function  {
+  &.function:not(.firebug):not(.dom) {
     color: @lap-orange;
 
     &.any-method {
@@ -223,16 +237,11 @@
   }
 
   &.name.tag {
-    color: @red;
-    text-decoration: underline;
+    color: @lap-orange;
   }
 
   &.other.attribute-name {
     color: @lap-purple;
-
-    &.id {
-      color: @blue;
-    }
   }
 }
 
@@ -265,8 +274,8 @@
 
 .markup {
   &.bold {
-    color: @orange;
-    font-style: bold;
+    color: @lap-dark-blue;
+    font-weight: bold;
   }
 
   &.changed {
@@ -278,7 +287,7 @@
   }
 
   &.italic {
-    color: @purple;
+    color: @syntax-text-color;
     font-style: italic;
   }
 
@@ -305,8 +314,13 @@
 
 .source.gfm .markup {
   -webkit-font-smoothing: auto;
+
   &.heading {
-    color: @green;
+    color: @lap-purple;
+  }
+
+  .variable.list {
+    color: @syntax-text-color;
   }
 }
 
