@@ -2,8 +2,16 @@
 
 .source.js {
   .keyword {
+    // `new` keyword treated as a regular keyword
     &.new {
       color: @lap-purple;
+    }
+  }
+
+  .support {
+    // global variables
+    &.variable {
+      font-weight: bold;
     }
   }
 }

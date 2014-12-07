@@ -1,0 +1,15 @@
+@import "syntax-variables";
+
+.source.less {
+  // variables, like @lap-dark-blue
+  .variable {
+    color: @lap-dark-blue;
+  }
+
+  .entity {
+    // selectors, like this one
+    &.other.attribute-name {
+      color: @lap-purple;
+    }
+  }
+}

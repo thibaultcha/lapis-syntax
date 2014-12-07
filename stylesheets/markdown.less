@@ -4,10 +4,11 @@
   -webkit-font-smoothing: auto;
 
   &.heading {
-    color: @lap-purple;
+    color: @lap-dark-blue;
+    font-weight: bold;
   }
 
-  .variable.list {
-    color: @syntax-text-color;
+  &.underline {
+    border-bottom: solid 1px darken(@syntax-text-color, 20%);
   }
 }

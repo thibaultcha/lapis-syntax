@@ -128,10 +128,6 @@
     color: @lap-orange;
   }
 
-  &.numeric:not(.css) {
-    color: @lap-dark-blue;
-  }
-
   &.other.color {
     color: @cyan;
   }
@@ -142,7 +138,7 @@
 }
 
 .variable {
-  color: @lap-dark-blue;
+  color: @syntax-text-color;
 
   &.interpolation {
     color: darken(@red, 10%);
@@ -180,11 +176,14 @@
       color: @lap-gray;
     }
 
-    &.string,
     &.variable,
     &.parameters,
     &.array {
       color: @syntax-text-color;
+    }
+
+    &.string {
+      color: @lap-yellow;
     }
 
     &.heading,
@@ -237,11 +236,11 @@
   }
 
   &.name.tag {
-    color: @lap-orange;
+    color: @lap-purple;
   }
 
   &.other.attribute-name {
-    color: @lap-purple;
+    color: @lap-dark-blue;
   }
 }
 
@@ -274,7 +273,6 @@
 
 .markup {
   &.bold {
-    color: @lap-dark-blue;
     font-weight: bold;
   }
 
