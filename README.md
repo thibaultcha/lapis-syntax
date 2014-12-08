@@ -2,7 +2,7 @@
 
 A profound, purple based, dark colored theme for Atom.
 
-[lapis-syntax](screenshot.png)
+![lapis-syntax](screenshot.png)
 
 Inspired by [Lapis website](http://leafo.net/lapis/), a web framework for Lua.
 
