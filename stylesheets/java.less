@@ -1,0 +1,20 @@
+@import "syntax-variables";
+
+.source.java {
+  .storage {
+    // Import packages, we only want the import keyword to be highlighted purple
+    &.modifier.import {
+      color: @syntax-text-color;
+    }
+
+    // Any instance declaration of a certain class
+    &.type {
+      color: @syntax-text-color;
+    }
+
+    // Java annotations
+    &.type.annotation {
+      color: @lap-gray;
+    }
+  }
+}

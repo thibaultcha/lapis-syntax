@@ -1,3 +1,7 @@
-## 0.1.0 - First Release
-* Every feature added
-* Every bug fixed
+## 1.0.0 - First Release
+- Base theme
+- Minor optimizations for:
+  - JavaScript
+  - Markdown
+  - Less
+  - Java

@@ -1,7 +1,7 @@
-# lapis-syntax theme
+## lapis-syntax
 
-Inspired by [Lapis website](http://leafo.net/lapis/)
+A profound, purple-based, dark colored theme for Atom.
 
-A short description of your theme.
+[Screenshot]()
 
-![A screenshot of your theme](https://f.cloud.github.com/assets/69169/2289498/4c3cb0ec-a009-11e3-8dbd-077ee11741e5.gif)
+Inspired by [Lapis website](http://leafo.net/lapis/), a web framework for Lua.
