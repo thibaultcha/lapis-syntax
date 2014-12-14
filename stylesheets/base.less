@@ -9,6 +9,12 @@
   background-color: @lap-gray-background;
   color: @syntax-text-color;
 
+  &.is-focused {
+    .line.cursor-line {
+      background-color: lighten(@lap-gray-background, 5%);
+    }
+  }
+
   .wrap-guide {
     background-color: @syntax-wrap-guide-color;
   }
