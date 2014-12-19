@@ -1,0 +1,23 @@
+@import "syntax-variables";
+
+.source.jade {
+  .entity {
+    &.attribute-name {
+      color: @lap-red;
+    }
+
+    &.name {
+      color: @lap-purple;
+    }
+  }
+
+  .constant {
+    color: @lap-dark-blue;
+  }
+
+  .keyword {
+    .operator {
+      color: @lap-light-blue;
+    }
+  }
+}
