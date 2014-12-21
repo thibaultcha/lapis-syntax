@@ -9,15 +9,29 @@
     &.name {
       color: @lap-purple;
     }
+
+    &.function {
+      color: @lap-orange;
+    }
   }
 
-  .constant {
-    color: @lap-dark-blue;
+  .storage {
+    &.type {
+      color: @lap-orange;
+    }
   }
 
   .keyword {
-    .operator {
-      color: @lap-light-blue;
+    &.operator {
+      color: @lap-red;
     }
+  }
+
+  .support.constant {
+    color: inherit;
+  }
+
+  .mixin {
+    color: @lap-green;
   }
 }
