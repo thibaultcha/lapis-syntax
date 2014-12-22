@@ -1,3 +1,7 @@
+## 0.1.2 (upcoming)
+- Operator keywords are now normal font weight
+- Jade optimizations
+
 ## 0.1.1
 - Highlight cursor line
 - Slightly darker background
