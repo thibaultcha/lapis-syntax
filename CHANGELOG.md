@@ -1,4 +1,4 @@
-## 0.1.2 (upcoming)
+## 0.1.2
 - Operator keywords are now normal font weight
 - Jade optimizations
 
