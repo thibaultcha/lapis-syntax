@@ -5,7 +5,7 @@
   color: @syntax-text-color;
 }
 
-.editor {
+.editor::shadow {
   background-color: @lap-gray-background;
   color: @syntax-text-color;
 
@@ -13,6 +13,10 @@
     .line.cursor-line {
       background-color: lighten(@lap-gray-background, 5%);
     }
+  }
+
+  &.mini .scroll-view {
+    padding-left: 1px;
   }
 
   .wrap-guide {
@@ -25,6 +29,15 @@
 
   .invisible-character {
     color: @syntax-invisible-character-color;
+  }
+
+  .search-results .marker .region {
+    background-color: transparent;
+    border: 1px solid @syntax-result-marker-color;
+  }
+
+  .search-results .marker.current-result .region {
+    border: 1px solid @syntax-result-marker-color-selected;
   }
 
   .gutter {
@@ -71,15 +84,6 @@
   .selection .region {
     background-color: @syntax-selection-color;
   }
-}
-
-.editor .search-results .marker .region {
-  background-color: transparent;
-  border: 1px solid @syntax-result-marker-color;
-}
-
-.editor .search-results .marker.current-result .region {
-  border: 1px solid @syntax-result-marker-color-selected;
 }
 
 .comment {
@@ -307,8 +311,4 @@
   &.raw.inline {
     color: @green;
   }
-}
-
-.editor.mini .scroll-view {
-  padding-left: 1px;
 }
