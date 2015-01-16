@@ -1,11 +1,7 @@
 @import "syntax-variables";
 
-.editor-colors {
-  background-color: @lap-gray-background;
-  color: @syntax-text-color;
-}
-
-.editor::shadow {
+atom-text-editor,
+atom-text-editor::shadow {
   background-color: @lap-gray-background;
   color: @syntax-text-color;
 
@@ -15,7 +11,7 @@
     }
   }
 
-  &.mini .scroll-view {
+  &[mini] .scroll-view {
     padding-left: 1px;
   }
 
