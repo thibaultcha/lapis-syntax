@@ -1,7 +1,13 @@
 @import "syntax-variables";
 
-atom-text-editor,
-atom-text-editor::shadow {
+.editor-colors,
+:host {
+  background-color: @lap-gray-background;
+  color: @syntax-text-color;
+}
+
+.editor,
+:host {
   background-color: @lap-gray-background;
   color: @syntax-text-color;
 

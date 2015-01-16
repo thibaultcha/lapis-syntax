@@ -1,3 +1,12 @@
+## 1.0.2
+- Comply to 1.0.0 API [v0.174.0](https://atom.io/docs/v0.174.0/upgrading/upgrading-your-syntax-theme/)
+
+## 1.0.1
+- Fix package version not in sync with atom
+
+## 1.0.0
+- 1.0 release, no changes
+
 ## 0.1.2
 - Operator keywords are now normal font weight
 - Jade optimizations
