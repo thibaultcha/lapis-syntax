@@ -1,3 +1,9 @@
+## 1.0.4
+- Fix Atom engine semver [#1](https://github.com/thibaultCha/lapis-syntax/pull/1)
+
+## 1.0.3
+- Drop < 1.0.0 API
+
 ## 1.0.2
 - Comply to 1.0.0 API [v0.174.0](https://atom.io/docs/v0.174.0/upgrading/upgrading-your-syntax-theme/)
 
